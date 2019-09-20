@@ -5,14 +5,49 @@
     <title>Yu-Jou,Shen</title>
   </head>
   <style>
-  	body {
-  		background-color: #080405;
-  	}
-  	#menu {
    font-family: Tsukushi B Round Gothic;
    font-size: 20px;
    width: 600px;
   
+    body {
+      background-color: #080405;
+    }
+    ul {
+      margin: 0;
+      padding: 0;
+      list-style: none;
+    }
+    ul.drop-down-menu{
+      border: #ccc 1px solid;
+      display: inline-block;
+      font-family: Tsukushi B Round Gothic;
+      font-size: 13px;
+    }
+    ul.ddrop-down-menu li {
+      position: relative;
+      white-space: nowrap;
+      border-right: #ccc 1px solid;
+    }
+    ul.drop-down-menu> li:list-child {
+      border-right: none;
+    }
+    ul.drop-down-menu>li{
+      float: right;
+    }
+    ul.drop-down-menu a{
+      color: #fff;
+      display: block;
+      padding: 0 30px;
+      text-decoration: none;
+      line-height: 40px;
+    }
+    ul.drop-down-menu a:hover{
+      color: #979797;
+
+    }
+    ul.drop-down-menu li:hover > a{
+      color: #979797;
+    }
 
   </style>
   <body>
@@ -21,7 +56,7 @@
               width: 100%;
               position: absolute;
        "> 
-  <div class="table"
+    <div class="table"
        style="
               display: block;
               width: 100%;
@@ -29,21 +64,38 @@
               margin-left: 150px; 
 
        ">
-  	<img src="logo.png"
-  	     style="
-  	          margin: 150px auto;
-  	     ">
+      <img src="logo.png"
+         style="
+              margin: 150px auto;
+         ">
+      <ul class="drop-down-menu">
+         <li><a href="#">About</a>
+         </li>
+         <li><a href="#">Protfolio</a>
+          <ul>
+            <li><a href="#">Graphic Design</a>
+            </li>
+            <li><a href="#">UI Design</a>
+            </li>
+            <li><a href="#">Calligraphy</a>
+            </li>
+            <li><a href="#">Illustration</a>
+            </li>
+          </ul>
+         </li>
+         <li><a href="#">Contact</a>
+         </li>   
     
  
-  </div>
-  	
+     </div>
+    
   <div class="inside"
        style=" 
                
                margin-top: 270px;
                width: 100%;
                position: relative;
-               ">  		      	
+               ">             
     <img src="myself.png"
          style="  
                width: 60%;
@@ -62,18 +114,18 @@
                position: absolute;
                z-index: 1 ;
                ">           
-  	<pre style=" 
-  	           
-  	           left: 150px;
-  	           bottom: -100px;
-  	           font-family: Tsukushi B Round Gothic;
-  		       font-size: 16px;
-  		       letter-spacing: 7px;
-  		       line-height: 1.8;
-  		       color: #fff;
-  		       position: absolute; 
-  		       z-index:1; 
-  		       ">
+    <pre style=" 
+               
+               left: 150px;
+               bottom: -100px;
+               font-family: Tsukushi B Round Gothic;
+             font-size: 16px;
+             letter-spacing: 7px;
+             line-height: 1.8;
+             color: #fff;
+             position: absolute; 
+             z-index:1; 
+             ">
 沈聿柔
 1997.01.20
 不知不覺要邁入23歲的埔里囝仔。
@@ -96,18 +148,18 @@
                 display: block;
                 z-index:-2;
                 ">
-	<pre style=" 
-  	           top: 0px;
-  	           text-align: right;
-  	           right: 200px;
-  	           font-family: Tsukushi B Round Gothic;
-  		       font-size: 16px;
-  		       letter-spacing: 7px;
-  		       line-height: 1.8;
-  		       color: #fff;
-  		       position: absolute;
-  		       z-index:2; 
-  		       ">
+  <pre style=" 
+               top: 0px;
+               text-align: right;
+               right: 200px;
+               font-family: Tsukushi B Round Gothic;
+             font-size: 16px;
+             letter-spacing: 7px;
+             line-height: 1.8;
+             color: #fff;
+             position: absolute;
+             z-index:2; 
+             ">
 <b>SKILLS</b>
 AI/PS/ID/AE/PR
 DW/Xd/Sketch
