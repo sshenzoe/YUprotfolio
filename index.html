@@ -22,69 +22,74 @@
   </style>
   <body>
     <!-- ＭＥＮＵ！！！ -->
-    <div
-      id="menu"
-    >
-      <img
-        src="/logo.png"
-        style="
-          width: 60px;
-          height: 55px;
-        "
-      >
-      <ul>
-        <li>
-          <a href="#">About</a>
-        </li>
-        <li>
-          <a href="#">Protfolio</a>
-        </li>
-        <li>
-          <a href="#">Graphic Design</a>
-        </li>
-        <li>
-          <a href="#">UI Design</a>
-        </li>
-        <li>
-          <a href="#">Calligraphy</a>
-        </li>
-        <li>
-          <a href="#">Illustration</a>
-        </li>
-        <li>
-          <a href="#">Contact</a>
-        </li>
-      </ul>
+    <div id="menu">
+      <div class="menu-content">
+        <img
+          src="/logo.png"
+          style="
+            width: 60px;
+            height: 55px;
+          "
+        >
+        <ul>
+          <li>
+            <a href="#">About</a>
+          </li>
+          <li>
+            <a href="#">Protfolio</a>
+          </li>
+          <li>
+            <a href="#">Graphic Design</a>
+          </li>
+          <li>
+            <a href="#">UI Design</a>
+          </li>
+          <li>
+            <a href="#">Calligraphy</a>
+          </li>
+          <li>
+            <a href="#">Illustration</a>
+          </li>
+          <li>
+            <a href="#">Contact</a>
+          </li>
+        </ul>
+      </div>
     </div>
     <!-- ＭＥＮＵ 的 ＣＳＳ -->
     <style>
       #menu {
-        display: flex;
-        flex-direction: row;
-        align-items: center;
-        justify-content: space-between; 
         position: fixed;
         top: 0;
         left: 0;
         width: 100vw;
         height: 100px;
-        padding: 0 30px;
         background-color: #080405;
         z-index: 70;
       }
-      #menu > ul {
+      #menu > .menu-content {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: space-between;
+        width: 100%;
+        max-width: 1000px;
+        margin: 0 auto;
+        padding: 0 30px;
+      }
+      #menu > .menu-content > ul {
         display: flex;
         flex-direction: row;
         list-style: none;
       }
-      #menu > ul > li > a {
+      #menu > .menu-content > ul > li > a {
         color: #fff;
         margin-left: 30px;
         text-decoration: none;
         line-height: 40px;
         font-size: 14px;
       }
-      #menu > ul > li > a:hover {
+      #menu > .menu-content > ul > li > a:hover {
         color: #979797;
       }
     </style>
