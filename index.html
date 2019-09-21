@@ -12,35 +12,25 @@
     ul {
       position: absolute;
       right: 178px;
-      background-color: #08405;
+      background-color: #080405;
       list-style: none;
       display: block;
 
     }
     ul.drop-down-menu {
-      
       display: inline-block;
       font-family: Tsukushi B Round Gothic;
       font-size: 14px;
-       
-      
-
-
     }
     ul.ddrop-down-menu li {
       position: relative;
       white-space: nowrap;
-
-      
-    
     }
     ul.drop-down-menu> li:list-child {
       border-right: none;
     }
     ul.drop-down-menu > li {
       float: left;
-
-
     }
     ul.drop-down-menu a{
       color: #fff;
@@ -51,130 +41,136 @@
     }
     ul.drop-down-menu a:hover{
       color: #979797;
-
     }
     ul.drop-down-menu li:hover > a{
       color: #979797;
     }
     ul.drop-down-menu ul {
-       
-        position: absolute;
-        z-index: 99;
-        left: 100px;
-        top: 100%;
-       min-width: 180px;
+      position: absolute;
+      z-index: 99;
+      left: 100px;
+      top: 100%;
+      min-width: 180px;
     }
 
     ul.drop-down-menu ul li:last-child {
-        border-bottom: none;
+      border-bottom: none;
     }
 
     ul.drop-down-menu ul ul { 
-        z-index: 999;
-        background-color: #080405; 
-        top: 10px;
+      z-index: 999;
+      background-color: #080405; 
+      top: 10px;
     }
      ul.drop-down-menu ul { 
-        display: none;
+      display: none;
     }
 
     ul.drop-down-menu li:hover > ul { 
-        display: block;
+      display: block;
     }
-
   </style>
   <body>
-  <div
-    class="content"
-    style="
-      width: 100%;
-      position: absolute;
-    "
-  > 
-    <div class="menu"
-       style="
-              display: block;
-              position: fixed;
-       
-              width: 100%;
-             
-              padding-top: 20px;
-             
-              z-index: 70;
-              
+    <div
+      class="content"
+      style="
+        width: 100%;
+        position: absolute;
+      "
+    > 
+      <div
+        class="menu"
+        style="
+          display: block;
+          position: fixed;
+          width: 100%;
+          padding-top: 20px;
+          z-index: 70;
+      "
+      >
+        <img
+          src="/logo.png" 
+          style="
+            padding-left: 150px;
+          "
+        >
 
-     ">
-      <img src="logo.png" 
-           style="padding-left: 150px;
-           ">
-
-      <ul class="drop-down-menu">
-         <li><a href="#">About</a>
-         </li>
-         <li><a href="#">Protfolio</a>
-          <ul>
-            <li><a href="#">Graphic Design</a>
-            </li>
-            <li><a href="#">UI Design</a>
-            </li>
-            <li><a href="#">Calligraphy</a>
-            </li>
-            <li><a href="#">Illustration</a>
-            </li>
-          </ul>
-         </li>
-         <li><a href="#">Contact</a>
-         </li>   
-    
- 
-     </div>
-    
-  <div class="inside"
-       style=" 
-               
-               margin-top: 320px;
-               width: 100%;
-               position: relative;
-               ">             
-    <img src="myself.png"
-         style="  
-               width: 60%;
-               margin: 0 auto;
-               display: block;
-               min-width: 320px;
-               opacity: 60%;
-               z-index:-1;
-               ">
-    <img src="yujoushen.png"
-         style="
-               top: -70px;  
-               right: 150px;
-               width: 180px;
-               display: block;
-               position: absolute;
-               z-index: 1 ;
-               ">           
-    <pre style=" 
-               
-               left: 150px;
-               bottom: -100px;
-               font-family: Tsukushi B Round Gothic;
-             font-size: 16px;
-             letter-spacing: 7px;
-             line-height: 1.8;
-             color: #fff;
-             position: absolute; 
-             z-index:1; 
-             ">
-沈聿柔
-1997.01.20
-不知不覺要邁入23歲的埔里囝仔。
-個性超級古怪彆扭。
-<br>來到台北讀書，有種從井底出來看世界的感覺，
-每個禮拜都有看不完的展覽和講座，
-滿滿的設計能量，讓我對設計越陷越深。
-越是挖掘，越是看見自己的不足。關於設計不懂的還很多，
-我還在路上，且不打算停留。</pre>
+        <ul class="drop-down-menu">
+          <li>
+            <a href="#">About</a>
+          </li>
+          <li>
+            <a href="#">Protfolio</a>
+          <li>
+            <a href="#">Graphic Design</a>
+          </li>
+          <li>
+            <a href="#">UI Design</a>
+          </li>
+          <li>
+            <a href="#">Calligraphy</a>
+          </li>
+          <li>
+            <a href="#">Illustration</a>
+          </li>
+          <li>
+            <a href="#">Contact</a>
+          </li>
+        </ul>
+      </div>
+      <div
+        class="inside"
+        style="
+          margin-top: 320px;
+          width: 100%;
+          position: relative;
+        "
+      >             
+      <img
+        src="/myself.png"
+        style="  
+          width: 60%;
+          margin: 0 auto;
+          display: block;
+          min-width: 320px;
+          opacity: 60%;
+          z-index:-1;
+        "
+      >
+      <img
+        src="/yujoushen.png"
+        style="
+          top: -70px;  
+          right: 150px;
+          width: 180px;
+          display: block;
+          position: absolute;
+          z-index: 1 ;
+        "
+      >           
+      <pre
+        style="
+          left: 150px;
+          bottom: -100px;
+          font-family: Tsukushi B Round Gothic;
+          font-size: 16px;
+          letter-spacing: 7px;
+          line-height: 1.8;
+          color: #fff;
+          position: absolute; 
+          z-index:1; 
+        "
+      >
+        沈聿柔
+        1997.01.20
+        不知不覺要邁入23歲的埔里囝仔。
+        個性超級古怪彆扭。
+        <br>來到台北讀書，有種從井底出來看世界的感覺，
+        每個禮拜都有看不完的展覽和講座，
+        滿滿的設計能量，讓我對設計越陷越深。
+        越是挖掘，越是看見自己的不足。關於設計不懂的還很多，
+        我還在路上，且不打算停留。
+      </pre>
 </div>
 <div style=" 
        margin-top: 200px;
