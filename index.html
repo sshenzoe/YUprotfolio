@@ -39,10 +39,10 @@
           </li>
           <li>
             <a href="#">Protfolio</a>
-          </li>
-          <li>
-            <a href="#">Graphic Design</a>
             <ul>
+              <li>
+                <a href="#">Graphic Design</a>
+              </li>
               <li>
                 <a href="#">UI Design</a>
               </li>
@@ -81,35 +81,39 @@
         margin: 0 auto;
         padding: 0 30px;
       }
-      #menu > .menu-content ul {
+      #menu > .menu-content > ul {
         display: flex;
         flex-direction: row;
         list-style: none;
       }
-      #menu > .menu-content ul li {
+      #menu > .menu-content > ul > li {
         position: relative;
         margin-left: 30px;
       }
-      #menu > .menu-content ul li a {
+      /* Menu下面的所有a都套用這個 */
+      #menu > .menu-content a {
         color: #fff;
         text-decoration: none;
         line-height: 40px;
         font-size: 14px;
       }
-      #menu > .menu-content ul li a:hover {
+      #menu > .menu-content a:hover {
         color: #979797;
       }
-      #menu > .menu-content ul li ul {
+      #menu > .menu-content > ul > li > ul {
         position: absolute;
-        left: 0;
+        left: -10px;
         display: none;
-        padding-left: 0;
+        padding-left: 10px;
+        width: 200px;
+        background-color: #080405;
+        list-style: none;
       }
-      #menu > .menu-content ul li:hover ul {
+      #menu > .menu-content > ul > li:hover > ul {
         display: block;
       }
-      #menu > .menu-content ul li ul li {
-        margin-left: 0;
+      #menu > .menu-content > ul > li > ul > li {
+        margin-left: 0px;
       }
     </style>
     <!-- 包含所有區塊的大區塊，最大寬度1000px然後永遠水平置中 -->
