@@ -4,6 +4,10 @@
     <meta charset="utf-8">
     <title>Yu-Jou,Shen</title>
   </head>
+  <!--
+    沈聿柔我愛妳！！！！
+    澳洲來的飛吻～～～
+  -->
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <!-- 這邊只放通用的ＣＳＳ，要針對各個區塊請放在區塊下面 -->
   <style>
@@ -84,12 +88,13 @@
         color: #979797;
       }
     </style>
-    <!-- -->
+    <!-- 包含所有區塊的大區塊，最大寬度1000px然後永遠水平置中 -->
     <div
       style="
         width: 100%;
         margin: 0 auto;
         max-width: 1000px;
+        padding: 0 30px;
       "
     >
       <!-- 介紹區塊 -->
@@ -116,37 +121,37 @@
       </div>
       <!-- 介紹區塊的 CSS -->
       <style>
-          #introduction {
-            margin-top: 320px;
-            width: 100%;
-            position: relative;
-          }
-          #introduction > .beautiful-woman {
-            width: 60%;
-            margin: 0 auto;
-            display: block;
-            min-width: 320px;
-            opacity: 60%;
-            z-index:-1;
-          }
-          #introduction > .beautiful-woman-name {
-            top: -70px;
-            right: 150px;
-            width: 180px;
-            display: block;
-            position: absolute;
-            z-index: 1 ;
-          }
-          #introduction > .left-bottom-paragraph {
-            left: 150px;
-            bottom: -100px;
-            font-size: 16px;
-            letter-spacing: 7px;
-            line-height: 1.8;
-            color: #fff;
-            position: absolute; 
-            z-index:1; 
-          }
+        #introduction {
+          margin-top: 320px;
+          width: 100%;
+          position: relative;
+        }
+        #introduction > .beautiful-woman {
+          width: 80%;
+          margin: 0 auto;
+          display: block;
+          min-width: 320px;
+          opacity: 60%;
+          z-index:-1;
+        }
+        #introduction > .beautiful-woman-name {
+          top: -70px;
+          right: 0;
+          width: 180px;
+          display: block;
+          position: absolute;
+          z-index: 1 ;
+        }
+        #introduction > .left-bottom-paragraph {
+          left: 0;
+          bottom: -100px;
+          font-size: 16px;
+          letter-spacing: 7px;
+          line-height: 1.8;
+          color: #fff;
+          position: absolute; 
+          z-index:1; 
+        }
       </style>
       <!-- 小雞區塊 -->
       <div id="chicken-block">
@@ -201,7 +206,7 @@
         #chicken-block .right-top-paragraph {
           top: 0px;
           text-align: right;
-          right: 200px;
+          right: 0;
           font-size: 16px;
           letter-spacing: 7px;
           line-height: 1.8;
@@ -210,13 +215,13 @@
           z-index:2;
         }
         #chicken-block .left-bottom-paragraph {
-          left: 150px;
+          left: 0;
           font-size: 16px;
           letter-spacing: 7px;
           line-height: 1.8;
           color: #fff;
           position: absolute; 
-          bottom: 300px;
+          bottom: 100px;
           z-index:1; 
         }
       </style>
